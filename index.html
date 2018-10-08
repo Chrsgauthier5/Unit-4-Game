@@ -7,22 +7,68 @@
     <title>Power Crystals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
+    <!--Linking jQuery-->
     <script src="assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!--Linking Bootstrap-->
 </head>
 
-<body>
-    <h1 id="gamename"></h1>
+<body class="bg-info">
 
-    <div>
-        <p id="target-score"></p>
-        <p id="user-score"></p>
-        
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="gamename" class="text-center"></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+        <h4 id="instructions" class="text-center text-danger bg-dark text-center"></h4>
+    </div>
+    </div>
+        <div class="row images">
+            <div class="col-md-3">
+                <img class="pointer" id="crystal-1" src="assets/images/crystal1.jpg">
+            </div>
+            <div class="col-md-3">
+                <img class="pointer" id="crystal-2" src="assets/images/crystal2.jpg">
+            </div>
+            <div class="col-md-3">
+                <img class="pointer" id="crystal-3" src="assets/images/crystal3.jpg">
+            </div>
+            <div class="col-md-3">
+                <img class="pointer" id="crystal-4" src="assets/images/crystal4.jpg">
+            </div>
+        </div>
 
+
+        <br>
+
+
+        <div class="row">
+            <div class="col-md-3">
+                <p id="target-score" class="p-3 mb-2 bg-success text-white"></p>
+            </div>
+            <div class="col-md-3">
+                <p id="user-score" class="p-3 mb-2 bg-primary text-white"></p>
+            </div>
+            <div class="col-md-3">
+                <p id="wins" class="p-3 mb-2 bg-dark text-white"></p>
+            </div>
+            <div class="col-md-3">
+                <p id="losses" class="p-3 mb-2 bg-dark text-white"></p>
+            </div>
+        </div>
 
     </div>
+
 </body>
 
 </html>

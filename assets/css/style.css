@@ -1,0 +1,41 @@
+img{
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: #ffffff;
+    border: 2px solid orange ;
+    display: inline-block;
+}
+p{
+    display: inline;
+    margin: 20px;
+}
+div.images{
+    margin-top: 40px;
+}
+h1{
+    background-image: linear-gradient(to right , #f00,#ff0,#0ff,#0f0,#00f);
+    background-clip: text;
+    animation: animate 20s linear infinite;
+    padding: 10px;
+    color: gray;
+}
+h4{
+    padding: 10px;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        background-position: 0% 100%;
+    }
+    50%
+    {
+        background-position: 100% 0%;
+    }
+    100%
+    {
+        background-position: 0% 100%;
+    }
+}
